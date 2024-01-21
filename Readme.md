@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss-individual/1/user/2448967).
-* Наставник: `Неизвестно`.
+* Студент: [Светлана Вдовина](https://up.htmlacademy.ru/htmlcss-individual/1/user/2448967).
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
 
 ---
 
