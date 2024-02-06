@@ -190,7 +190,10 @@
     padding: 0;
 }
 
-.services {}
+.services {
+    margin: 0;
+    padding: 0;
+}
 
 .services-slogan {
     color: #000000;
