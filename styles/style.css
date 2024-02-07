@@ -25,6 +25,12 @@
     background-color: #ffffff;
 }
 
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .main-header {}
 
 .logo-link {}
@@ -91,6 +97,7 @@
 }
 
 .welcome-image {
+    display: block;
     margin: 65px;
 }
 
