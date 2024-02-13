@@ -87,12 +87,12 @@
 .welcome {
     padding-bottom: 84px;
     padding-top: 50px;
+    background-color: #264f6b;
+    background-image: url("../images/triangle.svg"), url("../images/background-welcome.jpg");
     background-size: 100% 57px, cover;
     min-height: 352px;
-    background-color: #264f6b;
     background-repeat: no-repeat, no-repeat;
     background-position: left 0 bottom 0, center top;
-    background-image: url("../images/triangle.svg"), url("../images/background-welcome.jpg")
 }
 
 .visually-hidden {
@@ -123,7 +123,7 @@
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
-    margin: 0;
+    margin: 0 0 25px;
     padding: 0;
 }
 
@@ -133,8 +133,8 @@
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
-    margin-top: 24px;
-    padding-bottom: 68px;
+    margin: 0 0 89px;
+    padding: 0;
 }
 
 .reasons-list {
@@ -264,9 +264,8 @@
 }
 
 .search {
-   display: block;
-   padding-bottom: 66px;
-   padding-top: 67px
+   padding-bottom: 95px;
+   padding-top: 96px
 }
 
 .search-title {
@@ -276,7 +275,10 @@
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
-    margin-bottom: 12px;
+    padding: 0;
+    margin: 0 auto 20px;
+    text-align: center;
+    width: 600px;
 }
 
 .search-description {
@@ -284,12 +286,14 @@
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
-    margin-bottom: 51px;
     text-align: center;
+    padding: 0;
+    margin: 0 auto 54px;
+    width: 600px;
 }
 
 .search-button {
-    display: block;
+    display: inline-block;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
@@ -299,23 +303,26 @@
     border-radius: 4px;
     background: #756157;
     text-decoration: none;
-    min-height: 52px;
+    min-height: 36px;
     margin: 0 412px 0 412px;
-    padding: 0;
+    padding: 8px 50px;
+    max-width: 600px;
+    box-sizing: border-box;
 }
 
 .main-footer {}
 
 .subscribe {
+    padding-top: 98px;
     display: block;
     background-size: cover;
-    min-height: 415px;
+    min-height: 318px;
     background-color: #264f6b;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("../images/background-subscribe.jpg");
     width: 1200px;
-    height: 415px;
+    height: 318px;
 }
 
 .subscribe-welcome {
@@ -325,8 +332,9 @@
     line-height: 36px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 16px;
-    padding-top: 98px;
+    margin: 0 auto 20px;
+    padding: 0;
+    width: 500px;
 }
 
 .subscribe-description {
@@ -335,8 +343,9 @@
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
-    margin-bottom: 60px;
+    margin: 0 auto 54px;
     padding: 0;
+    width: 500px;
 }
 
 .subscribe-form {
