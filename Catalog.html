@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Седона</title>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+
+    <body class="body">
+        <div class="container">
+            <header class="main-header">
+                <a href="#" class="logo-link">
+                    <img class="logo-image" src="./images/logo.svg" alt="Логотип сайта города Седона">
+                </a>
+                <nav class="nav">
+                    <ul class="main-menu">
+                        <li class="main-menu-item">
+                            <a href="#" class="main-menu-link">Главная</a>
+                        </li>
+                        <li class="main-menu-item">
+                            <a href="#" class="main-menu-link">О Седоне</a>
+                        </li>
+                        <li class="main-menu-item">
+                            <a href="#" class="main-menu-link">Гостиницы</a>
+                        </li>
+                    </ul>
+                    <ul class="user-menu">
+                        <li class="user-menu-item">
+                            <a href="#" class="user-menu-link-search">
+                                <span class="visually-hidden">Поиск по сайту</span>
+                            </a>
+                        </li>
+                        <li class="user-menu-item">
+                            <a href="#" class="user-menu-link-favorite">
+                                <span class="visually-hidden">Перейти в избранное</span>
+                                <span class="fav-count">12</span>
+                            </a>
+                        </li>
+                        <li class="user-menu-item-button">
+                            <a href="#" class="user-menu-link-button">Хочу сюда!</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section class="Filter-content">
+                    <h1 class="title">Гостиницы Седоны</h1>
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs-icon">
+                            <a href="#" class="breadcrumbs-link-home">
+                                <span class="visually-hidden">Домик</span>
+                            </a>
+                        </li>
+                        <li class="breadcrumbs-icon">
+                            <a href="#" class="breadcrumbs-link-next">
+                                <span class="visually-hidden">Следующий</span>
+                            </a>
+                        </li>
+                        <li class="breadcrumbs-item">
+                            <a href="#" class="breadcrumbs-link-hotels">Гостиницы</a>
+                         </li>
+                    </ul>
+                    <h2 class="visually-hidden">Параметры поиска с фильтрами</h2>
+                    <form class="search-form">
+                       <fieldset class="search-option">
+                        <legend class="search-option-title">Инфраструктура</legend>
+                        <ul class="search-option-list">
+                            <li class="search-option-item">
+                                <label class="cotrol">
+                                    <input class="control-input" type="checkbox" name="swimming pool" checked>"Бассейн"
+                                </label>
+                            </li>
+                            <li class="search-option-item">
+                                <label class="cotrol">
+                                    <input class="control-input" type="checkbox" name="parking" checked>"Парковка"
+                                </label>
+                            </li>
+                            <li class="search-option-item">
+                                <label class="cotrol">
+                                    <input class="control-input" type="checkbox" name="Wi-Fi">"Wi-Fi"
+                                </label>
+                            </li>
+                        </ul>
+                       </fieldset>
+                       <fieldset class="search-option">
+                        <legend class="search-option-title">Тип Жилья</legend>
+                        <ul class="search-option-list">
+                            <li class="search-option-item">
+                                <label class="cotrol">
+                                    <input class="control-input" type="radio" name="type-house" checked>"Гостиница"
+                                </label>
+                            </li>
+                            <li class="search-option-item">
+                                <label class="cotrol">
+                                    <input class="control-input" type="radio" name="type-house">"Мотель"
+                                </label>
+                            </li>
+                            <li class="search-option-item">
+                                <label class="cotrol">
+                                    <input class="control-input" type="radio" name="type-house">"Апартаменты"
+                                </label>
+                            </li>
+                        </ul>
+                       </fieldset>
+                       <fieldset class="search-option">
+                        <legend class="search-option-title">Стоимость, ₽:</legend>
+                        <div class="cost">
+                            <imput class="cost-from" type="text" placehoider="0 от"></imput>
+                            <imput class="cost-till" type="text" placehoider="9000 до"></imput>
+                        </div>
+                        <div class="maxline">
+                        <button class="button1"></button>
+                        <button class="button2"></button>
+                       </fieldset>
+                       <fieldset class="search-option">
+                        <a href="#">Применить</a>
+                        <a href="#">Сбросить</a>
+                       </fieldset>
+                    </form>
+                </section>
+                <section class="Catalog-hotels">
+
+                </section>
+            </main>
+            <footer class="main-footer">
+                <section class="subscribe-catalog">
+                    <h2 class="visually-hidden">Подписка</h2>
+                    <p class="subscribe-welcome-catalog">Подпишитесь на рассылку</p>
+                    <p class="subscribe-description-catalog">Только полезная информация и никакого спама,<br>честное
+                        бойскаутское!</p>
+                    <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+                        <input class="email-catalog" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
+                        <button class="subscribe-button" type="submit">Подписаться</button>
+                    </form>
+                </section>
+                <section class="address">
+                    <h2 class="visually-hidden">Контактная информация</h2>
+                    <ul class="social-list">
+                        <li class="social-item">
+                            <a class="social-link-vk" href="#">
+                                <span class="visually-hidden">Вконтакте</span>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link-tg" href="#">
+                                <span class="visually-hidden">Tелеграмм</span>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link-youtube" href="#">
+                                <span class="visually-hidden">Ютуб</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="phone-item">
+                        <a class="phone-button-catalog" href="tel:+78128121212">+7 (812) 812-12-12</a>
+                    </div>
+                    <div class="footer-logo-block">
+                        <a class="footer-logo-link" href="https://htmlacademy.ru/">
+                            <img class="footer-logo" src="./images/html-academy.svg" alt="Логотип HTML Academy">
+                        </a>
+                </section>
+            </footer>
+        </div>
+    </body>
+
+</html>

@@ -74,41 +74,69 @@
 
 .user-menu {
     margin: 0;
-    padding: 0;
+    padding: 14px 70px 12px 0;
     list-style: none;
     display: flex;
-    width: 300px;
+    width: 380px;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .user-menu-item {
 }
 
-.user-menu-link {
-    color: #000000;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
+.user-menu-link-search {
+ width: 44px;
+  height: 36px;
     display: block;
-    padding: 20px 16px;
-    text-transform: uppercase;
+    background-image: url("../images/search.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-.fav-count {}
-
-.user-menu-item-button {
-    padding: 0;
-    text-transform: uppercase;
+.user-menu-link-favorite{
+    width: 44px;
+    height: 36px;
+    display: block;
+    background-image: url("../images/heart.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
 }
 
-.button {
+.fav-count {
+    background-color: #7db54f;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    right: 4px;
+    top: -3px;
+}
+
+.user-menu-item-button{
+margin-left: 20px;
+}
+
+.user-menu-link-button {
+    display: block;
     background-color: #756157;
     border-radius: 4px;
     text-decoration: none;
-    min-height: 36px;
-    max-width: 160px;
+    max-width: 162px;
     box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 8px 34px 8px 36px;
 }
 
 .welcome {
@@ -448,6 +476,7 @@
     flex-wrap: wrap;
     margin: 12px 0 0;
     padding: 0;
+    width: 150px;
 }
 
 .social-item {
@@ -455,25 +484,28 @@
     text-decoration: none;
 }
 
-.social-item-vk {
+.social-link-vk {
+    display: block;
     background-image: url("../images/vk.svg");
     background-repeat: no-repeat;
-    Width: 47.33px;
-    Height: 40px;
+    width: 47px;
+    height: 40px;
 }
 
-.social-item-tg {
+.social-link-tg {
+    display: block;
     background-image: url("../images/telegram.svg");
     background-repeat: no-repeat;
-    Width: 47.33px;
-    Height: 40px;
+    width: 47px;
+    height: 40px;
 }
 
-.social-item-youtube {
+.social-link-youtube {
+    display: block;
     background-image: url("../images/youtube.svg");
     background-repeat: no-repeat;
-    Width: 47.33px;
-    Height: 40px;
+    width: 47px;
+    height: 40px;
 }
 
 .phone-item {}
@@ -496,3 +528,75 @@
 .footer-logo-link {}
 
 .footer-logo {}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.maxline {
+    margin-top: 41px;
+    width: 287px;
+    height: 4px;
+    background-color: #ffffff;
+}
+
+.subscribe-catalog {
+    padding-top: 98px;
+    padding-bottom: 105px;
+    display: block;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 1200px;
+}
+
+.subscribe-welcome-catalog {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto 20px;
+    padding: 0;
+    width: 500px;
+}
+
+
+.subscribe-description-catalog {
+    color: #000000;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 auto 54px;
+    padding: 0;
+    width: 500px;
+}
+
+.email-catalog {
+    background-color: #e6e6e6;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 452px;
+    min-height: 51px;
+    padding-left: 21px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+}
+
+.phone-button-catalog {
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 17px;
+}
