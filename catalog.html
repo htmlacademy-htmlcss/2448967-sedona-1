@@ -47,14 +47,9 @@
                 <section class="filter-content">
                     <h1 class="title">Гостиницы Седоны</h1>
                     <ul class="breadcrumbs">
-                        <li class="breadcrumbs-icon">
+                        <li class="breadcrumbs-item">
                             <a href="#" class="breadcrumbs-link-home">
                                 <span class="visually-hidden">Домик</span>
-                            </a>
-                        </li>
-                        <li class="breadcrumbs-icon">
-                            <a href="#" class="breadcrumbs-link-next">
-                                <span class="visually-hidden">Следующий</span>
                             </a>
                         </li>
                         <li class="breadcrumbs-item">
@@ -68,18 +63,18 @@
                             <ul class="search-option-list">
                                 <li class="search-option-item">
                                     <input class="checkbox-input visually-hidden" type="checkbox" id="swimming-pool"
-                                        name="swimming pool" checked>
+                                        name="service" checked value="swimming-pool">
                                     <label class="checkbox-label" for="swimming-pool">Бассейн</label>
                                 </li>
                                 <li class="search-option-item">
                                     <input class="checkbox-input visually-hidden" type="checkbox" id="parking"
-                                        name="parking" checked>
+                                        name="service" checked value="parking">
                                     <label class="checkbox-label" for="parking">Парковка</label>
                                 </li>
                                 <li class="search-option-item">
-                                    <input class="checkbox-input visually-hidden" type="checkbox" id="Wi-Fi"
-                                        name="Wi-Fi">
-                                    <label class="checkbox-label" for="swimming-pool">Wi-Fi</label>
+                                    <input class="checkbox-input visually-hidden" type="checkbox" id="wifi"
+                                        name="service" value="wifi">
+                                    <label class="checkbox-label" for="wifi">Wi-Fi</label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -87,28 +82,28 @@
                             <legend class="search-option-title">Тип Жилья</legend>
                             <ul class="search-option-list">
                                 <li class="search-option-item">
-                                    <input class="checkbox-input visually-hidden" type="radio" id="type-house"
-                                        name="type-house" checked>
-                                    <label class="checkbox-label-radio" for="type-house">Гостиница</label>
+                                    <input class="checkbox-input visually-hidden" type="radio" id="hotel"
+                                        name="type-house" checked value="hotel">
+                                    <label class="checkbox-label-radio" for="hotel">Гостиница</label>
                                 </li>
                                 <li class="search-option-item">
-                                    <input class="checkbox-input visually-hidden" type=" radio" id="type-house"
-                                        name="type-house">
-                                    <label class="checkbox-label-radio" for="type-house">Мотель</label>
+                                    <input class="checkbox-input visually-hidden" type="radio" id="motel"
+                                        name="type-house" value="motel">
+                                    <label class="checkbox-label-radio" for="motel">Мотель</label>
                                 </li>
                                 <li class="search-option-item">
-                                    <input class="checkbox-input visually-hidden" type="radio" id="type-house"
-                                        name="type-house">
-                                    <label class="checkbox-label-radio" for="type-house">Апартаменты</label>
+                                    <input class="checkbox-input visually-hidden" type="radio" id="apartment"
+                                        name="type-house" value="apartment">
+                                    <label class="checkbox-label-radio" for="apartment">Апартаменты</label>
                                 </li>
                             </ul>
                         </fieldset>
                         <fieldset class="search-option cost-form">
                             <legend class="search-option-title">Стоимость, ₽:</legend>
                             <div class="cost">
-                                <imput class="cost-from" type="text" placehoider="0">0</imput>
+                                <input class="cost-from" type="text" placeholder="0" value="0" name="min-price">
                                 <label class="catalog-filter-from">от</label>
-                                <imput class="cost-till" type="text" placehoider="9000">9000</imput>
+                                <input class="cost-till" type="text" placeholder="9000" value="9000" name="max-price">
                                 <label class="catalog-filter-till">до</label>
                             </div>
                             <div class="container-cost">
@@ -123,28 +118,32 @@
                             </div>
                         </fieldset>
                         <fieldset class="search-option">
-                            <a href="#" class="apply">Применить</a>
-                            <a href="#" class="reset">Сбросить</a>
+                            <button class="apply" type="submit">Применить</button>
+                            <button class="reset" type="reset">Сбросить</button>
                         </fieldset>
                     </form>
                 </section>
                 <section class="catalog-hotels">
-                    <h2 class="found">Найдено гостиниц: 38</h2>
-                    <select class="select-control" aria-label="Сортировка">
-                        <option value="cheap">Сначала дeшевые</option>
-                        <option value="expensive">Сначала дорогие</option>
-                        <option value="number-stars">По количеству звезд</option>
-                    </select>
-                    <div class="button-cards">
-                        <a href="#" class="button-card">
-                            <span class="visually-hidden">Показать карточки</span>
-                        </a>
-                        <a href="#" class="button-card-big">
-                            <span class="visually-hidden">Показать курупные карточки с описанием</span>
-                        </a>
-                        <a href="#" class="button-card-ul">
-                            <span class="visually-hidden">Показать список</span>
-                        </a>
+                    <div class="container-found">
+                        <h2 class="found">Найдено гостиниц: 38</h2>
+                    </div>
+                    <div class="container-select">
+                        <select class="select-control" aria-label="Сортировка">
+                            <option value="cheap">Сначала дeшевые</option>
+                            <option value="expensive">Сначала дорогие</option>
+                            <option value="number-stars">По количеству звезд</option>
+                        </select>
+                        <div class="button-cards">
+                            <a href="#" class="button-card">
+                                <span class="visually-hidden">Показать карточки</span>
+                            </a>
+                            <a href="#" class="button-card-big">
+                                <span class="visually-hidden">Показать курупные карточки с описанием</span>
+                            </a>
+                            <a href="#" class="button-card-ul">
+                                <span class="visually-hidden">Показать список</span>
+                            </a>
+                        </div>
                     </div>
                 </section>
                 <ul class="product-list">
@@ -155,7 +154,7 @@
                         </a>
                         <div class="prices">
                             <p class="hotel-card-price">Гостиница</p>
-                            <p class="price">От 4000 P</p>
+                            <p class="price">От 4000 ₽</p>
                         </div>
                         <div class="cards-container">
                             <a href="№" class="hotel-details">Подробнее</a>
@@ -171,7 +170,7 @@
                         </a>
                         <div class="prices">
                             <p class="hotel-card-price">Гостиница</p>
-                            <p class="price">От 5000 P</p>
+                            <p class="price">От 5000 ₽</p>
                         </div>
                         <div class="cards-container">
                             <a href="№" class="hotel-details">Подробнее</a>
@@ -187,7 +186,7 @@
                         </a>
                         <div class="prices">
                             <p class="hotel-card-price">Гостиница</p>
-                            <p class="price">От 2500 Р</p>
+                            <p class="price">От 2500 ₽</p>
                         </div>
                         <div class="cards-container">
                             <a href="№" class="hotel-details">Подробнее</a>
@@ -203,7 +202,7 @@
                         </a>
                         <div class="prices">
                             <p class="hotel-card-price">Гостиница</p>
-                            <p class="price">От 1500 Р</p>
+                            <p class="price">От 1500 ₽</p>
                         </div>
                         <div class="cards-container">
                             <a href="№" class="hotel-details">Подробнее</a>
@@ -213,9 +212,6 @@
                         </div>
                     </li>
                 </ul>
-                <div class="long-line">
-                    <div class="line"></div>
-                </div>
                 <ul class="pagination">
                     <li class="pagination-item">
                         <a href="#" class="pagination-current pagination-link">1</a>
