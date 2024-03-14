@@ -31,6 +31,9 @@
   margin-right: auto;
   background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-header {
@@ -79,20 +82,9 @@
   position: absolute;
   content: "";
   bottom: 0;
-  left: 16px;
-  width: 68px;
-  height: 2px;
-  background-color: rgba(117, 98, 87, 1);
-  border: none;
-}
-
-.hotel-active::after {
-  position: absolute;
-  content: "";
-  bottom: 0;
   left: 15px;
-  width: 77%;
-  height: 1px;
+  width: 75%;
+  height: 2px;
   background-color: rgba(117, 98, 87, 1);
   border: none;
 }
@@ -161,6 +153,10 @@
   color: #ffffff;
   text-transform: uppercase;
   padding: 8px 34px 8px 36px;
+}
+
+.page-main {
+  flex-grow: 1;
 }
 
 .welcome {
@@ -274,7 +270,7 @@
 }
 
 .reasons-item-blue .reasons-description {
-  color: #fffffff;
+  color: #ffffff;
 }
 
 .reasons-item-blue .reasons-description::after {
@@ -840,8 +836,6 @@
 }
 
 .search-option {
-  display: flex;
-  flex-direction: column;
   width: 190px;
 }
 
@@ -874,8 +868,9 @@
   width: 191px;
   color: #ffffff;
   text-decoration: none;
-  margin-top: 38px;
+  margin-top: 34px;
   border: none;
+  padding: 8px 41px;
 }
 
 .catalog-hotels {
@@ -926,48 +921,33 @@
   flex-wrap: wrap;
   justify-content: start;
   gap: 8px;
+  width: 160px;
+}
+
+.button-card-view {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-position: 13px 15px;
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+  border: 2px solid #e6e6e6;
 }
 
 .button-card {
-  display: block;
-  width: 48px;
-  height: 48px;
-  background-color: #ffffff;
-  border-radius: 4px;
   border: 2px solid #000000;
-  box-sizing: border-box;
   background-image: url("../images/cards.svg");
-  background-repeat: no-repeat;
-  background-size: 16px 14px;
-  background-position: 13px 15px;
 }
 
 .button-card-big {
-  display: block;
-  width: 48px;
-  height: 48px;
-  background-color: #ffffff;
-  border-radius: 4px;
-  border: 2px solid #e6e6e6;
-  box-sizing: border-box;
   background-image: url("../images/big-cards.svg");
-  background-repeat: no-repeat;
-  background-size: 16px 14px;
-  background-position: 14px 15px;
 }
 
 .button-card-ul {
-  display: block;
-  width: 48px;
-  height: 48px;
-  background-color: #ffffff;
-  border-radius: 4px;
-  border: 2px solid #e6e6e6;
-  box-sizing: border-box;
   background-image: url("../images/ul.svg");
-  background-repeat: no-repeat;
-  background-size: 16px 14px;
-  background-position: 14px 15px;
 }
 
 .product-list {
@@ -1248,4 +1228,17 @@
   min-height: 582px;
   background-color: #ffffff;
   border-radius: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  background-color: #e6e6e6;
+  width: 52px;
+  height: 52px;
+  border-radius: 26px;
+  border: none;
+  background-image: url(../images/close.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 65px 0 0 613px;
 }
